@@ -3,6 +3,9 @@ uuid = "257d0e10-ba0c-4014-b61a-657d3b5dcd33"
 authors = ["Miha Zgubic <miha.zgubic@invenialabs.co.uk> and contributors"]
 version = "0.1.0"
 
+[deps]
+JLSO = "9da8a3cd-07a3-59c0-a743-3fdc52c30d11"
+
 [compat]
 julia = "1"
 
