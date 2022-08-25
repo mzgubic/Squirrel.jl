@@ -10,11 +10,12 @@ const SPATH = expanduser("~/.julia/squirrel")
 function __init__()
     mkpath(SPATH)
 
-    # TODO: remove files more than a month old or something
+    for fname in readdir(SPATH)
+        datetime = DateTime(split(fname, "_")[2])
+        now() - datetime > Week(1) && rm(joinpath(SPATH, fname))
+    end
     return nothing
 end
-
-# TODO: expand the syntax for multiple symbols as well
 
 macro squirrel(arg::Symbol) # single item to squirrel away
     local argstr = string(arg)
