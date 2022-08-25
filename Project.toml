@@ -4,6 +4,7 @@ authors = ["Miha Zgubic <miha.zgubic@invenialabs.co.uk> and contributors"]
 version = "0.1.0"
 
 [deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 JLSO = "9da8a3cd-07a3-59c0-a743-3fdc52c30d11"
 
 [compat]

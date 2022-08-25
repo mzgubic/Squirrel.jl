@@ -2,5 +2,10 @@ using Squirrel
 using Test
 
 @testset "Squirrel.jl" begin
-    # Write your tests here.
+    a = 1
+    b = "string"
+
+    @squirrel a
+
+    @squirrel a, b
 end
